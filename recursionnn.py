@@ -40,7 +40,7 @@ for i in lst:
     if i > largest_numb:
         largest_num = i
 
-print("Largest number is:", largest_numb)
+print("Largest number is:", max(lst))
         
 
 
