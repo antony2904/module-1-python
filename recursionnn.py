@@ -34,11 +34,6 @@
 
 lst = [456,78,345,232.377,234,1000]
 
-largest_numb = lst[0]
-
-for i in lst:
-    if i > largest_numb:
-        largest_num = i
 
 print("Largest number is:", max(lst))
         

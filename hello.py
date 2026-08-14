@@ -70,7 +70,6 @@
 #print(new_lst)
 
 #lst=[0,1,2,3,4,5,6,7,8,9,10]
-<<<<<<< HEAD
 
 #new_lst=[]
 #for i in lst:
@@ -181,13 +180,6 @@
 
 
 
-
-    
-
-
-    
-=======
-
 #new_lst=[]
 #for i in lst:
   #  if i % 2 == 0:
@@ -295,7 +287,7 @@
 #divide_numbers(10, 2)
 #divide_numbers(10, 0)
 
->>>>>>> 25c3e3964b2b94504344eefa47f976260f21a45c
+
 
 
 
