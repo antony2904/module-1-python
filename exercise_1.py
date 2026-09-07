@@ -107,7 +107,17 @@
 
 #print(new_lst)
 
+
+
+
+
+
 #new try for this task on 7/08/2026
+
+
+
+
+
 #1
 #name = "antony"
 #age = 23
