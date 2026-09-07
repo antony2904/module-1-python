@@ -107,57 +107,46 @@
 
 #print(new_lst)
 
-#def fibonacci_sum(n):
-#    if n <= 0:
-#        return 0
-    
-#    fib_list = [0, 1][:n] 
-    
-#    while len(fib_list) < n:
-#       next_fib = fib_list[-1] + fib_list[-2]
-#        fib_list.append(next_fib)
-        
-#    print(f"First {n} Fibonacci numbers: {fib_list}")
-#    print(f"Sum: {sum(fib_list)}")
-
-#fibonacci_sum(5) 
-
-#name = "Alex"
-#age = 25
-#city = "Kochi"
+#new try for this task on 7/08/2026
+#1
+#name = "antony"
+#age = 23
+#city = "thrissur"
 
 #print(f"My name is {name}, I am {age} years old, and I live in {city}.")
-
-#a = 5
-#b = 10
-
+#2
+#a = 55
+#b = 100
+#3
 #a, b = b, a
 
 #print("a:", a, "b:", b) 
-
-#length = 100
-#width = 25
+#4
+#length = 260
+#width = 150
 #area = length * width
 
 #print(f"The area of the rectangle is {area}")
-
+#5
 #string_num = "50"
 #result = int(string_num) + 100
 
 #print(result) 
+#6
+#tuple_lst = (23,56,45)
+#tuple_lst[0] = 10
 
-#my_tuple = (1,2,3)
-#my_tuple[0] = 10
+#7
+#lst_1 = [1,2,3,4,]
+#lst_2 = [4, 5, 6, 7]
 
-#list1 = [1, 2, 3, 4]
-#list2 = [4, 5, 6, 7]
-
-#if set(list1) & set(list2):
-#    print("The lists have at least one common element.")
+#if set(lst_1) & set(lst_2):
+#    print("The lists have at least  common element.")
 #else:
 #    print("No common elements.")
 
-#def is_prime(n):
+#8
+#def function_is_prime(n):
 #    if n <= 1:
 #        return False
 #    for i in range(2, int(n**0.5) + 1):
@@ -165,44 +154,110 @@
 #            return False
 #    return True
 
-#print(is_prime(11)) 
+#print(function_is_prime(121))
 
-#def is_palindrome(word):
-#    word = word.lower()
-#    return word == word[::-1]
+#9
 
-#print(is_palindrome("Racecar")) 
+#def function_is_palindrome(word):
+#  word = word.lower()
+#  return word == word[::-1]
 
-#def add(x, y): return x + y
-#def subtract(x, y): return x - y
-#def multiply(x, y): return x * y
-#def divide(x, y): return x / y if y != 0 else "Cannot divide by zero"
+#print(function_is_palindrome("car"))
 
-#print("Add: ", add(10, 5))
-#print("Divide: ", divide(10, 0))
 
+#10
+#def addition(x,y): 
+#  return x+y
+  
+#def substraction(x,y): 
+#  return x-y
+  
+#def multiplying(x,y): 
+#  return x*y
+  
+#def division(x,y): 
+#  return x/y
+
+#num_1= int(input("Enter your first number :"))
+#num_2= int(input("Enter your second number :"))
+      
+
+#print(addition(num_1,num_2))
+#print(substraction(num_1,num_2))
+#print(multiplying(num_1,num_2))
+#print(division(num_1,num_2))
+
+#11
 #def check_even_odd(num):
 #    if num % 2 == 0:
 #        print(f"{num} is Even")
 #    else:
 #        print(f"{num} is Odd")
 
-#check_even_odd(257)
+#user = int(input("Enter your number :"))
 
+#check_even_odd(user)
+
+#12
 #def reverse_number(n):
 #    return int(str(n)[::-1])
 
-#print(reverse_number(12345)) 
+#print(reverse_number(56789)) 
 
-#def divide_numbers(a, b):
-#    try:
-#        result = a / b
-#    except ZeroDivisionError:
-#        print("Error: You cannot divide by zero!")
-#    else:
-#        print(f"Success! The result is {result}")
-#    finally:
-#       print("Execution of divide_numbers completed.\n")
+#13
+#def divide_number(x,y):
+#  try:
+#    result = x/y
+#  except ZeroDivisionError:
+#    print("Error:you cannot add by zero!")
+#  else:
+#    print(f"sucess,the result is {result}")
+#  finally:
+#    print("execution of divide number is completed.")
 
-#divide_numbers(10, 2)
-#divide_numbers(10, 0)
+#divide_number(10,2)
+#divide_number(10,0)
+
+#14
+def fibonacci_sum(n):
+    if n <= 0:
+        return 0
+    
+    fib_lst = [0, 1][:n]
+    
+    while len(fib_lst) < n:
+        nxt_fib = fib_lst[-1] + fib_lst[-2]
+        fib_lst.append(nxt_fib)
+        
+    print(f"first {n} fibonacci numbers : {fib_lst}")
+    print(f"Sum: {sum(fib_lst)}")
+
+fibonacci_sum(12)
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
