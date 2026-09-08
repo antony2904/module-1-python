@@ -1,12 +1,9 @@
-def divide_number(x,y):
-  try:
-    result = x/y
-  except ZeroDivisionError:
+number = int(input("Enter the number : \n"))
+try:
+    result = 10/number
+    print(result)
+except ZeroDivisionError :
     print("Error:you cannot divide by zero!")
-  #else:
-  #  print(f"sucess,the result is {result}")
-  finally:
+ 
+finally:
     print("execution of divide number is completed.")
-
-divide_number(10,2)
-divide_number(10,0)
