@@ -219,7 +219,7 @@
 #  try:
 #    result = x/y
 #  except ZeroDivisionError:
-#    print("Error:you cannot add by zero!")
+#    print("Error:you cannot divide by zero!")
 #  else:
 #    print(f"sucess,the result is {result}")
 #  finally:
