@@ -168,14 +168,14 @@
 # Expected groups may be: [["eat","tea","ate"], ["tan","nat"], ["bat"]]. 
 # Target O(n·k log k) or better, where n is the number of words and k is average word length.
 
-from collections import defaultdict
+lst =["eat", "tea", "tan", "ate", "nat", "bat"] 
 
 
 def group_anagrams(words): # Anagrams have the same sorted-letter key. Sorting each word costs O(k log k),
-    groups = defaultdict(list)
+    groups = {}
     for word in words:  # so processing n words costs O(n * k log k) overall.
         key = tuple(sorted(word))
-        groups[key].append(word)
+        groups.setdefault(key, []).append(word)
     return list(groups.values())
 
 
