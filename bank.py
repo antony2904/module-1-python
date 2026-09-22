@@ -1,3 +1,5 @@
+#Design a BankAccount class that allows users to deposit, withdraw,
+#  and check their account balance.
 class BankAccount:
     def __init__(self, account_holder: str, initial_balance: float = 0.0):
         self.__account_holder = account_holder
@@ -30,12 +32,30 @@ class BankAccount:
         print(f"Account Holder: {self.__account_holder}")
         print(f"Current Balance: ${self.__balance:.2f}")
 
+    def calculate_interest(self, rate: float = 0.02) -> float:
+        if rate < 0:
+            raise ValueError("Interest rate can't be negative.")
+        return self.__balance * rate
+
+
+class SavingsAccount(BankAccount):
+    def __init__(self, account_holder: str, initial_balance: float = 0.0):
+        super().__init__(account_holder, initial_balance)
+        
+    def calculate_interest(self, rate: float = 0.03) -> float:
+        """Calculate interest at the savings-account rate."""
+        if rate < 0:
+            raise ValueError("Interest rate can't be negative.")
+        return self.get_balance() * rate
+    
+
+
 
 accounts = [
     BankAccount("Alan Turing", 500.00),
-    BankAccount("John Luther", 600.00),
+    SavingsAccount("John Luther", 600.00),
     BankAccount("Anna Bella", 1000.00),
-    BankAccount("Mary Vincent", 1500.00),
+    SavingsAccount("Mary Vincent", 1500.00),
     BankAccount("Vincent Gomas", 2000.00),
 ]
 
@@ -46,7 +66,8 @@ def menu(account: BankAccount):
         print("1. Deposit")
         print("2. Withdraw")
         print("3. Check Balance")
-        print("4. Exit")
+        print("4. intrest")
+        print("5. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -65,6 +86,10 @@ def menu(account: BankAccount):
                 print(f"Current balance: ${account.get_balance():.2f}")
 
             elif choice == "4":
+                interest = account.calculate_interest()
+                print(f"interest : ${interest :.2f}")
+
+            elif choice == "5":
                 print("Thank you for using the bank service.")
                 break
 
