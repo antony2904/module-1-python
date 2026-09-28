@@ -11,7 +11,7 @@ class Employee:
         self.name = name
 
     def calculate_salary(self):
-        raise NotImplementedError("Subclasses must implement calculate_salary")
+        return NotImplementedError("Subclasses must implement calculate_salary")
 
 
 class FullTimeEmployee(Employee):
