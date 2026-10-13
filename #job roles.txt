@@ -1,0 +1,18 @@
+#job roles
+
+data analyst
+gen ai developer
+ml engineering
+python web developer
+computer vision engineer
+ai engineer
+ai cloud engineer
+
+
+gen ai developer(as a fresher)
+Bangalore/Kochi
+starting salary 40k/month
+expense - 20k for parents
+	  7k for food and accommodation
+	  8k for other expenses
+	  5k for savings
